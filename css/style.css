@@ -375,7 +375,10 @@ h1, h2, h3, h4, h5, h6, figure {
               width: 100%; } }
 
 .ShivAkriti-light-grey {
-  background: #DEFFF8; }
+  background: #DEFFF8;
+  display: block;
+   margin:auto;
+   height:80%}
 
 #ShivAkriti-intro,
 #ShivAkriti-about,
