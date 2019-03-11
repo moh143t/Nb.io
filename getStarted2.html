@@ -278,71 +278,56 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="text-center" id="exampleModalLabel">Detail form</h5>
+					<h5 class="text-center" id="exampleModalLabel">Call Back Request</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">
-					<form action="/action_page.php" >
+				<div class="modal-body" action="/action_page.php">
+			
 						<div class="form-group">
 							<input type="text" class="form-control" id="recipient-name" placeholder="Enter the full name" required>
-						</div>
-						<div class="form-group">
+						
 							<input type="number" class="form-control" id="number"
 								placeholder="Enter a valid phone number with country code" required
 								 >
-						</div>
 
-						<div class="form-group">
 							<input type="email" class="form-control"
 								placeholder="Enter a valid email address" name="email" required>
-						</div>
 
-						<div class="form-group">
 							<input type="text" class="form-control"
 								placeholder="Enter your Country" name="count"
-								pattern="[a-zA-Z]{3,}" required
+								pattern="[a-zA-Z]{3,}" 
 								oninvalid="this.setCustomValidity('Enter Full Country Name')"
 								oninput="this.setCustomValidity('')" />
-						</div>
-						<div class="form-group">
-							<input type="number" class="form-control"
+					
+						<input type="number" class="form-control"
 								placeholder="Area for Construction in Sq ft" name="count"
-								max='99999' required
+								max='99999' 
 								oninvalid="this.setCustomValidity('Enter area below 5 figure')"
 								oninput="this.setCustomValidity('')" />
-						</div>
-						<div class="form-group">
-							<select class="form-control" id="2" required>
+				
+							<select class="form-control" id="2" >
 								<option value="" disabled selected>Select Type of
 									Property</option>
 								<option value="RESIDENTIAL">RESIDENTIAL</option>
 								<option value="COMMERCIAL">COMMERCIAL</option>
 							</select>
-						</div>
 
-
-						<div class="form-group">
-
-							<select class="form-control" id="1" required>
+							<select class="form-control" id="1" >
 								<option value="" disabled selected>Select your Service</option>
 								<option value="2D Package">2D Package</option>
 								<option value="3D Package">3D Package</option>
 								<option value="Interior Package">Interior Package</option>
 								<option value="All three">All three</option>
 							</select>
-						</div>
-						<div class="form-group">
+
 							<input type="text" class="form-control"
-								placeholder="Enter Coupon code if have any" name="email" >
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" id="message-text"
+								placeholder="Enter Coupon code if have any" name="coupon" >
+\							<textarea class="form-control" id="message-text"
 								placeholder="Special Note..."></textarea>
 						</div>
-					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
