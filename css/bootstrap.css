@@ -4481,11 +4481,10 @@ a.thumbnail.active {
   right: -21px;
   color: inherit;
 }
-
 .alert-success {
-  background-color: #dff0d8;
   border-color: #d6e9c6;
-  color: #3c763d;
+  color: #000000;
+
 }
 .alert-success hr {
   border-top-color: #c9e2b3;
